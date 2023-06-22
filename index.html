@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Template portafolio desarrollador UI/UX " />
     <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/codificacion.png" type="image/x-icon">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
@@ -51,10 +52,10 @@
                 </div>
                 <h1 class="text-3xl sm:text-5xl md:text-7xl">Juliana Irungaray</h1>
                 <p class="text-gray-500">
-                    Estudiante de Licenciatura en Informática
+                    Estudiante de Analista de Sistemas
                 </p>
                 <div class="home__buttons flex align-items-center gap-2 mt-6">
-                    <a href="assets/CURRICULUM.pdf"
+                    <a href="assets/cvActual.pdf"
                     aria-label="Descargar curriculum"
                     class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
                     <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis proyectos"
@@ -73,15 +74,12 @@
                 <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
                     <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
                     <p id="textAbout" class="text-gray-500">Disfruto mucho aprender sobre tecnología y todo relacionado a ella.
-                        Me considero autodidacta, predipuesta, comprometida y responsable. <br>
-                        Actualmente me encuentro estudiando Licenciatura en Informática y realizando cursos sobre desarrollo frontend.
-                        Mi objetivo es poder insertarme en Sistemas, aprender de cada desafío nuevo que se presente y poder crecer
-                        profesionalmente. <br>
+                        Actualmente me encuentro estudiando Analista en Sistemas. Mi meta es convertirme en un desarrollador Full Stack enfocándome en React js. Quiero aplicar mis habilidades y conocimientos en proyectos reales. Mi enfoque se centra en aprender tecnologías clave para el desarrollo web y adquirir una comprensión completa de los aspectos del lado del cliente y del servidor. Me considero autodidacta, predispuesta, comprometida y responsable. <br>
                         En mis tiempos libres asisto a clases de Kung Fu y también voy al gimnasio.
                         </p>
 
                 </div>
-                <div class="image col p-0 mt-6 md:mt-0">
+                <div class="image col p-0 mt-6 md:mt-7">
                     <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
                 </div>
             </div>
@@ -116,6 +114,14 @@
                     </div>
                     <div class="service__name">
                         <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>React</p>
                     </div>
                 </div>
                 <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
@@ -169,6 +175,8 @@
                         <li class="filter-item " data-filter="barberia">Barbería</li>
                         <li class="filter-item " data-filter="cafe">Blog de café</li>
                         <li class="filter-item " data-filter="e__commerce">E-commerce</li>
+                        <li class="filter-item " data-filter="portafolio">Portafolio</li>
+                        <li class="filter-item " data-filter="react">Organizador</li>
                     </ul>
                 </div>
                 <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
@@ -192,6 +200,17 @@
                             <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
                             </p>
                              <a href="https://proyectoweb2juliana.netlify.app/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto7.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>E-commerce</h2>
+                            <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://julianairungaray.github.io/Challenge-ECommerce/pagina.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                         </div>
                     </div>
                     <div class="project__card vinos">
@@ -225,6 +244,28 @@
                             <p>Curso de Desarrollo Web con HTML5 y CSS3. Programa ONE - Oracle Next Education.
                             </p>
                              <a href="https://julianairungaray.github.io/Barberia-Alura/index.html "><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card portafolio">
+                        <img src="./assets/portafolio.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Portafolio</h2>
+                            <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://julianairungaray.github.io/Barberia-Alura/index.html "><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="project__card react">
+                        <img src="./assets/proyecto6.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Organizador</h2>
+                            <p>Curso de Desarrollo Web con HTML5, CSS3, JavaScript y React. Programa ONE - Oracle Next Education.
+                            </p>
+                             <a href="https://react-js-gold-three.vercel.app/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                         </div>
                     </div>
                 </div>

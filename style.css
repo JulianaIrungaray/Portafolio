@@ -270,8 +270,8 @@ body::-webkit-scrollbar-track {
 }
 
 .about__me .image img {
-    height: 75%;
-    width: 75%;
+    height: 85%;
+    width: 85%;
     object-fit: cover;
 }
 
