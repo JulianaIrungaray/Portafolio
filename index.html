@@ -2,309 +2,464 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
-    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/codificacion.png" type="image/x-icon">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
-    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
-    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+  <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/codificacion.png" type="image/x-icon">
+  <title>Juliana Irungaray - Desarrollador Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+  <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+  <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="flex w-full fixed top-0 z-1">
-        <nav class="flex justify-content-between w-full navbar">
-            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
-                <img src="./assets/logo.png" alt="Logo portafolio" width="50" height="50">
+  <!-- HEADER -->
+  <header class="flex w-full fixed top-0 z-1">
+    <nav class="flex justify-content-between w-full navbar">
+      <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+        <img src="./assets/logo.png" alt="Logo portafolio" width="50" height="50">
 
-            </span>
-            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
-                class="checkbox xl:hidden">
-            <div class="hamburger__lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <div class="header__info flex align-items-center gap-3">
-                <ul class="flex flex-column xl:flex-row list-none">
-                    <li class="li_animation" onclick="scrollToSection('about')">Sobre mí</li>
-                    <li class="li_animation" onclick="scrollToSection('services')">Skills</li>                    
-                    <li class="li_animation" onclick="scrollToSection('certificaciones')">Cursos y certificaciones</li>                    
-                    <li class="li_animation" onclick="scrollToSection('portfolio')">Mis proyectos</li>
-                    <li class="li_animation" onclick="scrollToSection('contact')">Contacto</li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!--HOME PAGE -->
-    <div class="container">
-        <section id="home" class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
-            <div class="left__content col-12 xl:col-6">
-                <div class="message__bubble triangle mb-4 md:mb-2">
-                    <div class="message__text p-2 sm:p-3 text-center">
-                        <p>Hola! <br> Mi nombre es</p>
-                    </div>
-                </div>
-                <h1 class="text-3xl sm:text-5xl md:text-7xl">Juliana Irungaray</h1>
-                <p class="text-gray-500">
-                    Estudiante de Analista de Sistemas
-                </p>
-                <div class="home__buttons flex align-items-center gap-2 mt-6">
-                    <a href="assets/cvActual.pdf"
-                    aria-label="Descargar curriculum"
-                    class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
-                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis proyectos"
-                    class="cursor-pointer border-round-lg">Mis proyectos</button>
-                </div>
-            </div>
-            <div class="right__content col-9 sm:col-6 xl:col-5">
-                <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
-            </div>
-        </section><br><br>
-
-
-        <!--ABOUT ME-->
-        <section id="about" class="about__me w-full flex align-items-center">
-            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
-                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
-                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
-                    <p id="textAbout" class="text-gray-500">Disfruto mucho aprender sobre tecnología y todo relacionado a ella.
-                        Actualmente me encuentro estudiando Analista en Sistemas. Mi meta es convertirme en un desarrollador Full Stack enfocándome en React js. Quiero aplicar mis habilidades y conocimientos en proyectos reales. Mi enfoque se centra en aprender tecnologías clave para el desarrollo web y adquirir una comprensión completa de los aspectos del lado del cliente y del servidor. Me considero autodidacta, predispuesta, comprometida y responsable. <br>
-                        En mis tiempos libres asisto a clases de Kung Fu y también voy al gimnasio.
-                        </p>
-
-                </div>
-                <div class="image col p-0 mt-6 md:mt-7">
-                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
-                </div>
-            </div>
-        </section>
-    </div>
-       <!--Skills -->
-       <div class="container">
-        <section id="services" class="services min-h-full w-full pb-7">
-            <div class="services__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Skills</h1>
-            </div>
-            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
-                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>HTML</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>CSS</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-square-js"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-react"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>React</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-java"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Java</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Python</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>GitHub</p>
-                    </div>
-                </div>
-              
-            </div>
-        </section>
-    <!--Certificaciones -->
-    <section id="certificaciones" class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
-        <h1 class="text-center">Cursos y certificaciones</h1>
-        <div class="hireMe__button pt-4">
-            <a href="https://drive.google.com/drive/folders/1juq8siBQEIsNhBXD8cdVIahQ82EtXmGq" aria-label="Ir a certificaciones"
-                class="cursor-pointer no-underline border-round-lg" id="puntero">🢂</a>
+      </span>
+      <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu" class="checkbox xl:hidden">
+      <div class="hamburger__lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="header__info flex align-items-center gap-3">
+        <ul class="flex flex-column xl:flex-row list-none">
+          <li class="li_animation" onclick="scrollToSection('about')">Sobre mí</li>
+          <li class="li_animation" onclick="scrollToSection('services')">Skills</li>
+          <li class="li_animation" data-section-id="programming-courses">Cursos y certificaciones</li>
+          <li class="li_animation" onclick="scrollToSection('portfolio')">Mis proyectos</li>
+          <li class="li_animation" onclick="scrollToSection('contact')">Contacto</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--HOME PAGE -->
+  <div class="container">
+    <section id="home"
+      class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+      <div class="left__content col-12 xl:col-6">
+        <div class="message__bubble triangle mb-4 md:mb-2">
+          <div class="message__text p-2 sm:p-3 text-center">
+            <p>Hola! <br> Mi nombre es</p>
+          </div>
         </div>
-    </section>
- 
+        <h1 class="text-3xl sm:text-5xl md:text-7xl">Juliana Irungaray</h1>
+        <p class="text-gray-500">
+          Estudiante de Licenciatura en Informática y Analista de Sistemas
+        </p>
+        <div class="home__buttons flex align-items-center gap-2 mt-6">
+          <a href="assets/cv.pdf" aria-label="Descargar curriculum" class="cursor-pointer border-round-lg no-underline"
+            download>Descargar CV</a>
+          <button onclick="scrollToSection('portfolio')"
+            aria-label="Deslizar a sección portafolio para mostrar mis proyectos"
+            class="cursor-pointer border-round-lg">Mis proyectos</button>
+        </div>
+      </div>
+      <div class="right__content col-9 sm:col-6 xl:col-5">
+        <img src="./assets/yo.jpg" alt="Foto perfil" width="100" height="100">
+      </div>
+    </section><br><br>
 
-        <!--Mis proyectos -->
-        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
-            <div class="portfolio__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Mis proyectos</h1>
+
+    <!--ABOUT ME-->
+    <section id="about" class="about__me w-full flex align-items-center">
+      <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+        <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+          <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+          <p id="textAbout" class="text-gray-500"> <br>
+            Disfruto mucho aprendiendo sobre tecnología y todo lo relacionado con ella. Actualmente, estoy
+            cursando Licenciatura en Informática y Analista de Sistemas. Mi meta es convertirme en una
+            desarrolladora Full Stack. Aspiro a aplicar mis habilidades y conocimientos en proyectos reales,
+            con un enfoque claro en aprender tecnologías clave para el desarrollo web y obtener una
+            comprensión integral de los aspectos tanto del lado del cliente como del servidor. Me considero
+            autodidacta, predispuesta, comprometida y responsable.
+            <br>Fuera del ámbito académico y profesional, dedico parte de mis tiempos libres a clases de
+            Kung Fu y gimnasio.
+          </p>
+
+        </div>
+        <div class="image col p-0 mt-6 md:mt-7">
+          <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Skills -->
+  <div class="container">
+    <section id="services" class="services min-h-full w-full pb-7">
+      <div class="services__title flex flex-column gap-3 text-center">
+        <h1 class="text-3xl md:text-5xl">Skills</h1>
+      </div>
+      <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+        <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="service__name">
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="service__name">
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="service__name">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="service__name">
+            <p>React</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="service__name">
+            <p>Java</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="service__name">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="service__name">
+            <p>GitHub</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-sass"></i>
+          </div>
+          <div class="service__name">
+            <p>Sass</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-gulp"></i>
+          </div>
+          <div class="service__name">
+            <p>Gulp</p>
+          </div>
+        </div>
+        <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+          <div class="service__logo flex align-items-center justify-content-center ">
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+          <div class="service__name">
+            <p>Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mis cursos y certificados -->
+    <section id="programming-courses" class="proyectos__section">
+      <div class="proyectos__titulo">
+        <h2 class="cursos">Cursos y certificaciones</h2>
+      </div>
+      <div class="galeria__proyectos">
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>Programador Junior</h2>
+          <p>Formación de Alura Latam y Oracle.</p>
+          <a class="cert" href="https://app.aluracursos.com/user/Julianairungaray3/fullCertificate/b752a92e81a81850d3d3d75e65ab2eaa">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="html-css">
+          <h2>HTML5 y CSS3</h2>
+          <p>Curso de HTML5 y CSS3: Avanzando en CSS.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/html5-css3-avanzando-css">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="react">
+          <h2>Diseño Responsivo</h2>
+          <p>Curso de Layouts Responsivos: Trabajando con layouts mobile.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/layouts-responsivos-layouts-mobile">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>Flexbox</h2>
+          <p>Curso de Flexbox: Posicione elementos en la pantalla.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/flexbox-posicione-elementos-pantalla">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>Arquitectura CSS</h2>
+          <p>Curso de arquitectura CSS: descomplicando los problemas.</p>
+          <a class="cert" href="#">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>JavaScript básico</h2>
+          <p>Curso de JavaScript: primeros pasos con el lenguaje.</p>
+          <a class="cert" href="#">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>JavaScript-Orientación a Objetos</h2>
+          <p>Curso de JavaScript: Introducción a la Orientación a Objetos.</p>
+          <a href="https://app.aluracursos.com/certificate/Julianairungaray3/javascript-introduccion-orientacion-objetos">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>JavaScript-Herencia</h2>
+          <p>Curso de JavaScript: Herencia e Interfaces en Orientación a Objetos.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/javascript-herencia-interfaces-orientacion-objetos">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>JS en la Web</h2>
+          <p>Curso de JS en la Web: Validación de Formularios y HTML5.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/javascript-web-validacion-formularios-html5">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>DOM con JavaScript</h2>
+          <p>Curso de JS en la Web: Manipulación del DOM con JavaScript.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/js-web-manipulacion-dom-javascript">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>CRUD con JavaScript</h2>
+          <p>Curso de JS en la Web: CRUD con JavaScript asíncrono.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/js-web-crud-javascript-asincrono">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>React Js</h2>
+          <p>Curso completo de React Js | Coderhouse.</p>
+          <a class="cert" href="https://www.coderhouse.com/certificados/64e2609389930ee47b1c1e06">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>React-Styled Components</h2>
+          <p>Curso de React: Utilizando Styled Components.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/react-utilizando-styled-components">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>React-Function Components</h2>
+          <p>Curso de React: Function Components.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/react-components">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>React Router</h2>
+          <p>Curso de React Router: Navegación en una SPA.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/react-router-navegacion-spa">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>React-Styled Components</h2>
+          <p>Curso de React: Utilizando Styled Components.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/react-utilizando-styled-components">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>Git y GitHub</h2>
+          <p>Curso de Git y GitHub: controle y comparta su código.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/git-github-control-version">Ver certificado</a>
+        </div>
+        
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>SQL con MySQL</h2>
+          <p>Curso de Introducción a SQL con MySQL: Manipule y consulte datos.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/introduccion-sql-mysql-manipule-consulte-datos">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>Metologías ágiles</h2>
+          <p>Curso de Organización de equipos ágiles: Las funciones existentes en un equipo.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/organizacion-equipos-agiles-funciones-existentes-equipo">Ver certificado</a>
+        </div>
+
+        <div class="proyecto__card show html-css" data-filter="javascript">
+          <h2>Gestión ágil</h2>
+          <p>Curso de Gestión ágil: Liderando el cambio en un ambiente de agilidad.</p>
+          <a class="cert" href="https://app.aluracursos.com/certificate/Julianairungaray3/gestion-agil-liderando-cambio">Ver certificado</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mis proyectos -->
+    <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+      <div class="portfolio__title flex flex-column gap-3 text-center">
+        <h1 class="text-3xl md:text-5xl">Mis proyectos</h1>
+      </div>
+      <div class="portfolio__gallery">
+        <div class="gallery__categories mb-5 mt-5">
+          <ul class="flex list-none flex-wrap justify-content-center gap-6">
+            <li class="filter-item active" data-filter="all">Todos</li>
+            <li class="filter-item " data-filter="vinos">Página de vinos</li>
+            <li class="filter-item " data-filter="encriptador">Encriptador</li>
+            <li class="filter-item " data-filter="barberia">Barbería</li>
+            <li class="filter-item " data-filter="cafe">Blog de café</li>
+            <li class="filter-item " data-filter="e__commerce">E-commerce</li>
+            <li class="filter-item " data-filter="portafolio">Portafolio</li>
+            <li class="filter-item " data-filter="react">Organizador</li>
+          </ul>
+        </div>
+        <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+          <div class="project__card encriptador">
+            <img src="./assets/proyecto-3.png.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>Encriptador</h2>
+              <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del
+                Programa ONE - Oracle Next Education.
+              </p>
+              <a href="https://github.com/JulianaIrungaray/challenge-encriptador-de-texto-alura"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
             </div>
-            <div class="portfolio__gallery">
-                <div class="gallery__categories mb-5 mt-5">
-                    <ul class="flex list-none flex-wrap justify-content-center gap-6">
-                        <li class="filter-item active" data-filter="all">Todos</li>
-                        <li class="filter-item " data-filter="vinos">Página de vinos</li>
-                        <li class="filter-item " data-filter="encriptador">Encriptador</li>
-                        <li class="filter-item " data-filter="barberia">Barbería</li>
-                        <li class="filter-item " data-filter="cafe">Blog de café</li>
-                        <li class="filter-item " data-filter="e__commerce">E-commerce</li>
-                        <li class="filter-item " data-filter="portafolio">Portafolio</li>
-                        <li class="filter-item " data-filter="react">Organizador</li>
-                    </ul>
-                </div>
-                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-                    <div class="project__card encriptador">
-                        <img src="./assets/proyecto-3.png.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Encriptador</h2>
-                            <p>Encriptador de texto desarrollado con HTML, CSS y JavaScript para el challenge del Programa ONE - Oracle Next Education.
-                            </p>
-                            <a href="https://julianairungaray.github.io/challenge-encriptador-de-texto-alura/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card e__commerce">
-                        <img src="./assets/proyecto-2.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>E-commerce</h2>
-                            <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
-                            </p>
-                             <a href="https://proyectoweb2juliana.netlify.app/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card e__commerce">
-                        <img src="./assets/proyecto7.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>E-commerce</h2>
-                            <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next Education.
-                            </p>
-                             <a href="https://julianairungaray.github.io/Challenge-ECommerce/pagina.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card vinos">
-                        <img src="./assets/proyecto-1.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Página de vinos</h2>
-                            <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
-                            </p>
-                             <a href="https://julianairungaray.github.io/Proyecto-Ingenias/index.html"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card cafe">
-                        <img src="./assets/proyecto-cafe.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Blog de café</h2>
-                            <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
-                            </p>
-                             <a href="https://julianairungaray.github.io/Proyecto3-Udemy/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card barberia">
-                        <img src="./assets/proyecto-5.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Barbería</h2>
-                            <p>Curso de Desarrollo Web con HTML5 y CSS3. Programa ONE - Oracle Next Education.
-                            </p>
-                             <a href="https://julianairungaray.github.io/Barberia-Alura/index.html "><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card portafolio">
-                        <img src="./assets/portafolio.png" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Portafolio</h2>
-                            <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next Education.
-                            </p>
-                             <a href="https://julianairungaray.github.io/Portafolio/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="project__card react">
-                        <img src="./assets/proyecto6.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Organizador</h2>
-                            <p>Curso de Desarrollo Web con HTML5, CSS3, JavaScript y React. Programa ONE - Oracle Next Education.
-                            </p>
-                             <a href="https://react-js-gold-three.vercel.app/"><span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="project__card e__commerce">
+            <img src="./assets/proyecto-2.png" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>E-commerce</h2>
+              <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
+              </p>
+              <a href="https://github.com/JulianaIrungaray/Proyecto2-Udemy"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
             </div>
-        </section>
-        <!--FOOTER -->
-        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center justify-content-between">
-            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
-                <!-- <h3 class="Redes_h3">Redes sociales</h3> -->
-                <div class="social__mediaIcons mt-6 flex lg:justify-content-center gap-8 ">
-                    <a href="https://github.com/JulianaIrungaray" target="_blank" aria-label="Ir a github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/jukiirungaray/" target="_blank" aria-label="Ir a instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/juliana-irungaray/" target="_blank" aria-label="Ir a linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
+          </div>
+          <div class="project__card e__commerce">
+            <img src="./assets/proyecto7.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>E-commerce</h2>
+              <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next
+                Education.
+              </p>
+              <a href="https://github.com/JulianaIrungaray/Challenge-ECommerce"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
             </div>
-            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
-                <h3>Contacto</h3>
-                <div class="email flex align-items-center gap-2">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>julianairungaray3@gmail.com</p>
-                </div>
-                <a href="mailTo:john@email.com"
-                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
-                    <span>
-                        <i class="fa-solid fa-message"></i>
-                    </span>Contáctame
-                </a>
+          </div>
+          <div class="project__card vinos">
+            <img src="./assets/proyecto-1.png" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>Página de vinos</h2>
+              <p>Curso Desarrollo Web Frontend con HTML5, CSS3 y JS. Programa Ingenias - Fundación YPF
+              </p>
+              <a href="https://github.com/JulianaIrungaray/Proyecto-Ingenias"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
             </div>
-            
-        </footer>
-        <h2 class="titulo-final">&copy; Juliana Irungaray | Todos los derechos reservados</h2><br>
-    </div>
+          </div>
+          <div class="project__card cafe">
+            <img src="./assets/proyecto-cafe.png" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>Blog de café</h2>
+              <p>Curso de Desarrollo Web con HTML5 y CSS3 - UDEMY
+              </p>
+              <a href="https://github.com/JulianaIrungaray/Proyecto3-Udemy"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+          </div>
+          <div class="project__card barberia">
+            <img src="./assets/proyecto-5.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>Barbería</h2>
+              <p>Curso de Desarrollo Web con HTML5 y CSS3. Programa ONE - Oracle Next Education.
+              </p>
+              <a href="https://github.com/JulianaIrungaray/Barberia-Alura"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+          </div>
+          <div class="project__card portafolio">
+            <img src="./assets/portafolio.png" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>Portafolio</h2>
+              <p>Curso de Desarrollo Web con HTML5, CSS3 y JavaScript. Programa ONE - Oracle Next
+                Education.
+              </p>
+              <a href="https://github.com/JulianaIrungaray/Portafolio"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+          </div>
+          <div class="project__card react">
+            <img src="./assets/proyecto6.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+              <h2>Organizador</h2>
+              <p>Curso de Desarrollo Web con HTML5, CSS3, JavaScript y React. Programa ONE - Oracle Next
+                Education.
+              </p>
+              <a href="https://github.com/JulianaIrungaray/React-JS"><span><i
+                    class="fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER -->
+    <footer id="contact"
+      class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center justify-content-between">
+      <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+        <!-- <h3 class="Redes_h3">Redes sociales</h3> -->
+        <div class="social__mediaIcons mt-6 flex lg:justify-content-center gap-8 ">
+          <a href="https://github.com/JulianaIrungaray" target="_blank" aria-label="Ir a github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/jukiirungaray/" target="_blank" aria-label="Ir a instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/juliana-irungaray/" target="_blank" aria-label="Ir a linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+        <h3>Contacto</h3>
+        <div class="email flex align-items-center gap-2">
+          <i class="fa-solid fa-envelope"></i>
+          <p>julianairungaray3@gmail.com</p>
+        </div>
+        <a href="mailTo:john@email.com"
+          class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+          <span>
+            <i class="fa-solid fa-message"></i>
+          </span>Contáctame
+        </a>
+      </div>
+
+    </footer>
+    <h2 class="titulo-final">&copy; Juliana Irungaray | Todos los derechos reservados</h2><br>
+  </div>
 
 </body>
 <script src="script.js"></script>
+
 </html>

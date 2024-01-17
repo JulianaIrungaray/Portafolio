@@ -64,7 +64,8 @@ body::-webkit-scrollbar-track {
 
 
 .header__info ul li {
-    padding: 2.5rem 1.2rem 1rem 1.2rem;
+    padding: 1.2rem 1.2rem 1rem 1.2rem;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
@@ -227,7 +228,7 @@ body::-webkit-scrollbar-track {
 
 .home__buttons a {
     background-color: var(--secondary-bg-color);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #fff;
     padding: 1rem 1.5rem;
 }
@@ -236,7 +237,7 @@ body::-webkit-scrollbar-track {
     border: 1px solid #fff;
     border-width: thin;
     font-family: var(--font);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #fff;
     padding: 1rem 1.5rem;
 }
@@ -265,7 +266,7 @@ body::-webkit-scrollbar-track {
 /* ------- ABOUT ME -------- */
 .about__me{
     margin-top: 3px;
-    padding-top: 160px;
+    padding-top: 50px;
     font-size: 1.5rem;
 }
 
@@ -275,13 +276,15 @@ body::-webkit-scrollbar-track {
     object-fit: cover;
 }
 
+
 /* ------- SKILLS -------- */
 .services {
-    padding-top: 160px;
+    padding-top: 10px;
 }
 .card {
     background-color: #111111;
     transition: all 0.2s ease-in;
+    padding: 20px; 
 }
 .service__logo {
     height: 60px;
@@ -308,20 +311,80 @@ body::-webkit-scrollbar-track {
 
 
 
-/* ------- FREE LANCER -------- */
-
-.freelancer {
-    height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) ,url(./assets/freelancer2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 100px;
+/* ------- CURSOS Y CERTIFICACIONES -------- */
+#programming-courses {
+    padding-top: 50px;
 }
-#puntero{
+
+.galeria__categorias ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.galeria__categorias ul li {
     font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 15px;
+    color: var(--secondary-bg-color);
 }
 
+
+.galeria__categorias .filtro-item.activo {
+    border-bottom: 2px solid var(--secondary-bg-color);
+}
+
+.galeria__proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyecto__card {
+    width: 300px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proyecto__card:hover {
+    transform: scale(1.05);
+}
+
+.proyecto__card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.proyecto__card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.proyecto__card a {
+    display: block;
+    color: var(--secondary-bg-color);
+    text-decoration: none;
+}
+
+.proyecto__card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.cursos{
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
 
 /* ------- MIS PROYECTOS -------- */
 i{
